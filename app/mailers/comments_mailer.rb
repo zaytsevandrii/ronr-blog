@@ -5,9 +5,9 @@ class CommentsMailer < ApplicationMailer
   #
   #   en.comments_mailer.submitted.subject
   #
-  def submitted
-    @greeting = "Hi"
+  def submitted(comment)
+    @comment=comment
 
-    mail to: "to@example.org"
+    mail to: "zaytsevandrii9@gmail.com", subject: "New comments"
   end
 end
